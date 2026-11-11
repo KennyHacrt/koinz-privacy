@@ -1,18 +1,18 @@
 # Privacy Policy — Koinz
 
-**Last updated:** November 4, 2026
+**Last updated:** November 12, 2026
 
 Kenny Lee ("we", "us") operates the mobile application **Koinz**. This page explains how we handle information when you use our app.
 
 ## Summary
 
-Koinz is a personal finance app. You sign in with Google and your bookkeeping data syncs to our cloud database (Supabase). Free users see ads via Google AdMob; optional Koinz Plus subscriptions are processed via Google Play and RevenueCat.
+Koinz is a personal finance app. You sign in with Google, Apple (on supported Apple devices), or an existing email account, and your bookkeeping data syncs to our cloud database (Supabase). Free users see ads via Google AdMob; optional Koinz Plus subscriptions are processed via Google Play or Apple's App Store, with RevenueCat managing subscription entitlements.
 
 ## Information We Collect
 
 ### Account information
 
-When you sign in with Google, we receive your **email address** and a unique user identifier. We use this only to authenticate you and associate your bookkeeping data with your account.
+When you sign in, we receive your **email address** (including an Apple private-relay address if you choose Hide My Email) and a unique user identifier. We use this only to authenticate you and associate your bookkeeping data with your account.
 
 ### Financial data you enter
 
@@ -23,6 +23,10 @@ We do **not** connect to your bank accounts. On Android, if you turn on **Auto b
 ### Payment notifications (Android, optional)
 
 If you grant notification access and pick which apps to follow, Koinz reads payment notifications from those apps only. Each notification is read **on your device** to work out the amount, merchant and wallet. The notification text is not uploaded. Only the entries you keep, or that you set to record automatically, are saved to your account like any other entry. You can turn this off at any time in Koinz or in Android settings.
+
+### Transaction text imports (iPhone and iPad, optional)
+
+On iOS, Koinz cannot read other apps' notifications or your message history. You can paste transaction text or pass text you choose through Koinz's Shortcuts action. The action may be used in an automation you configure in Apple's Shortcuts app. It opens Koinz to process the supplied text. Sources must first be enabled in Koinz. Text is queued and parsed on your device; the queue is associated with the signed-in account. Recognised entries that you confirm, or explicitly configure for automatic recording, sync to Supabase. Optional AI features have separate data handling described below.
 
 ### AI suggestions (optional, off by default)
 
@@ -39,7 +43,7 @@ AI output is only a suggestion. The app checks every value against your own data
 ### Device and usage data
 
 - **AdMob (Google)** may collect device identifiers (such as the advertising ID) and ad interaction data to show banner and occasional full-screen ads to free users.
-- **Google Play Billing / RevenueCat** processes subscription purchases; we receive entitlement status (premium or not), not your full payment card details.
+- **Google Play Billing or Apple App Store / RevenueCat** processes subscription purchases; we receive entitlement status (premium or not), not your full payment card details.
 - **Supabase** hosts authentication and database services under their [privacy policy](https://supabase.com/privacy).
 
 ### Market data and exchange rates
@@ -64,11 +68,14 @@ We share data only with service providers necessary to run the app:
 |----------|---------|
 | Supabase | Authentication & database hosting |
 | Google (Sign-In, Play, AdMob) | Sign-in, subscriptions, advertising |
+| Apple (Sign in with Apple, App Store) | Apple-device sign-in and subscription processing |
 | RevenueCat | Subscription entitlement management |
 | Yahoo Finance, CoinGecko, Frankfurter | Public price and exchange-rate lookups (ticker symbols and currency codes only) |
 | Third-party AI service | Optional AI suggestions: entry text, notes, category / wallet / project names (only when you turn it on) |
 
 Each provider processes data under their own privacy policies.
+
+On Apple devices, Koinz uses Google's User Messaging Platform to obtain applicable advertising consent before requesting ads. Where tracking permission is requested, you may decline it and continue using Koinz. Advertising privacy choices are available from the in-app legal/privacy screen when required.
 
 ## Data Retention
 
@@ -100,15 +107,16 @@ If you have questions about this privacy policy, contact us at:
 
 ## 隱私權政策 — Koinz（繁體中文摘要）
 
-**最後更新：** 2026 年 11 月 4 日
+**最後更新：** 2026 年 11 月 12 日
 
-Koinz 為個人理財 App。以 Google 登入後，記帳資料同步至雲端（Supabase）。免費版顯示 Google AdMob 廣告；可選 Koinz Plus 訂閱透過 Google Play 與 RevenueCat 處理。
+Koinz 為個人理財 App。以 Google、Apple（支援的 Apple 裝置）或既有電郵帳號登入後，記帳資料同步至雲端（Supabase）。免費版顯示 Google AdMob 廣告；可選 Koinz Plus 訂閱透過 Google Play 或 Apple App Store 處理，並由 RevenueCat 管理訂閱權益。
 
-- **帳號：** Google 登入取得 email 與使用者 ID，僅用於驗證與資料關聯。
+- **帳號：** 登入取得 email（可為 Apple 隱藏電郵地址）與使用者 ID，僅用於驗證與資料關聯。
 - **記帳資料：** 錢包、交易、分帳、專案標籤等由您輸入，存於 Supabase 以跨裝置同步；不連接銀行帳戶。
 - **自動記帳（Android，可選）：** 只讀取你揀選嘅 App 嘅付款通知，喺手機上處理，通知內容唔會上載；只有你保留嘅記錄會同步。
+- **iPhone／iPad 交易文字（可選）：** 只處理你貼上或經「捷徑」傳入的文字，不會讀取其他 App 通知或訊息記錄。文字在裝置上排隊及解析，並按登入帳戶分開；你確認或明確設定自動記錄的交易會同步到 Supabase。
 - **AI 建議（可選，預設關閉）：** 開啟後，對話記帳輸入嘅文字、記錄備註、錢包／類別／專案名稱，以及理財精靈問題同已計好嘅數字，會經我哋伺服器傳去第三方 AI 服務；唔會傳送你嘅 email 或帳號 ID。AI 只提供建議，你確認之前唔會寫入任何資料，亦唔會修改或刪除現有記錄。
-- **第三方：** AdMob（廣告）、RevenueCat / Google Play（訂閱）、Supabase（後端）；Yahoo Finance、CoinGecko、Frankfurter 只用於查詢公開報價與匯率，只會收到代號或幣別，不含你的帳號或資產資料。
+- **第三方：** AdMob（廣告）、RevenueCat / Google Play / Apple App Store（訂閱）、Apple（登入）、Supabase（後端）；Yahoo Finance、CoinGecko、Frankfurter 只用於查詢公開報價與匯率，只會收到代號或幣別，不含你的帳號或資產資料。
 - **刪除資料：** 可在 App「設定」刪除記帳資料或整個帳號。
 - **我們不出售個人資料。**
 
